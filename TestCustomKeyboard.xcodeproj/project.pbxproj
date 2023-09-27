@@ -1,0 +1,1031 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFDCAA0B2AC06AFA0061E87C /* TestCustomKeyboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCAA0A2AC06AFA0061E87C /* TestCustomKeyboardApp.swift */; };
+		AFDCAA0D2AC06AFA0061E87C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCAA0C2AC06AFA0061E87C /* ContentView.swift */; };
+		AFDCAA0F2AC06AFB0061E87C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAA0E2AC06AFB0061E87C /* Assets.xcassets */; };
+		AFDCAA122AC06AFB0061E87C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAA112AC06AFB0061E87C /* Preview Assets.xcassets */; };
+		AFDCAA1C2AC06AFB0061E87C /* TestCustomKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCAA1B2AC06AFB0061E87C /* TestCustomKeyboardTests.swift */; };
+		AFDCAA262AC06AFB0061E87C /* TestCustomKeyboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCAA252AC06AFB0061E87C /* TestCustomKeyboardUITests.swift */; };
+		AFDCAA282AC06AFB0061E87C /* TestCustomKeyboardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCAA272AC06AFB0061E87C /* TestCustomKeyboardUITestsLaunchTests.swift */; };
+		AFDCAA3B2AC06B830061E87C /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCAA3A2AC06B830061E87C /* KeyboardViewController.swift */; };
+		AFDCAA3F2AC06B830061E87C /* CustomKeyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AFDCAA382AC06B830061E87C /* CustomKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AFDCAA452AC06D3D0061E87C /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCAA442AC06D3D0061E87C /* KeyboardView.swift */; };
+		AFDCAA482AC06EA10061E87C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCAA472AC06EA10061E87C /* Constants.swift */; };
+		AFDCAA4A2AC0719F0061E87C /* View+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCAA492AC0719F0061E87C /* View+BackgroundColor.swift */; };
+		AFDCAA4B2AC072970061E87C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCAA472AC06EA10061E87C /* Constants.swift */; };
+		AFDCAA4D2AC075070061E87C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAA4C2AC075070061E87C /* Assets.xcassets */; };
+		AFDCAA4E2AC0753A0061E87C /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCAA442AC06D3D0061E87C /* KeyboardView.swift */; };
+		AFDCAA712AC09CE80061E87C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAA4C2AC075070061E87C /* Assets.xcassets */; };
+		AFDCAA722AC09E2D0061E87C /* View+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCAA492AC0719F0061E87C /* View+BackgroundColor.swift */; };
+		AFDCAB062AC0B79A0061E87C /* CandyTime.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAADE2AC0B7980061E87C /* CandyTime.ttf */; };
+		AFDCAB072AC0B79A0061E87C /* Kamikaze3DGradient.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAADF2AC0B7980061E87C /* Kamikaze3DGradient.ttf */; };
+		AFDCAB082AC0B79A0061E87C /* Adine Kirnberg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAE02AC0B7980061E87C /* Adine Kirnberg.ttf */; };
+		AFDCAB092AC0B79A0061E87C /* Precious.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAE12AC0B7980061E87C /* Precious.ttf */; };
+		AFDCAB0A2AC0B79A0061E87C /* PrinceValiant.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAE22AC0B7980061E87C /* PrinceValiant.ttf */; };
+		AFDCAB0B2AC0B79A0061E87C /* ChopinScript.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAE32AC0B7990061E87C /* ChopinScript.ttf */; };
+		AFDCAB0C2AC0B79A0061E87C /* Parisienne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAE42AC0B7990061E87C /* Parisienne-Regular.ttf */; };
+		AFDCAB0D2AC0B79A0061E87C /* Monoton-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAE52AC0B7990061E87C /* Monoton-Regular.ttf */; };
+		AFDCAB0E2AC0B79A0061E87C /* FrederickatheGreat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAE62AC0B7990061E87C /* FrederickatheGreat-Regular.ttf */; };
+		AFDCAB0F2AC0B79A0061E87C /* Gypsy Curse.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAE72AC0B7990061E87C /* Gypsy Curse.ttf */; };
+		AFDCAB102AC0B79A0061E87C /* Curely-Free Typeface.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAE82AC0B7990061E87C /* Curely-Free Typeface.ttf */; };
+		AFDCAB112AC0B79A0061E87C /* burnstown dam.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAE92AC0B7990061E87C /* burnstown dam.ttf */; };
+		AFDCAB122AC0B79A0061E87C /* Archistico_Simple.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAEA2AC0B7990061E87C /* Archistico_Simple.ttf */; };
+		AFDCAB132AC0B79A0061E87C /* LoversQuarrel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAEB2AC0B7990061E87C /* LoversQuarrel-Regular.ttf */; };
+		AFDCAB142AC0B79A0061E87C /* earwig factory rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAEC2AC0B7990061E87C /* earwig factory rg.ttf */; };
+		AFDCAB152AC0B79A0061E87C /* Halo3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAED2AC0B7990061E87C /* Halo3.ttf */; };
+		AFDCAB162AC0B79A0061E87C /* ElsieSwashCaps-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAEE2AC0B7990061E87C /* ElsieSwashCaps-Black.ttf */; };
+		AFDCAB172AC0B79A0061E87C /* cenobyte.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAEF2AC0B7990061E87C /* cenobyte.ttf */; };
+		AFDCAB182AC0B79A0061E87C /* electroharmonix.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAF02AC0B7990061E87C /* electroharmonix.ttf */; };
+		AFDCAB192AC0B79A0061E87C /* MessingLettern.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAF12AC0B7990061E87C /* MessingLettern.ttf */; };
+		AFDCAB1A2AC0B79A0061E87C /* PixelFJVerdana12pt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAF22AC0B7990061E87C /* PixelFJVerdana12pt.ttf */; };
+		AFDCAB1B2AC0B79A0061E87C /* SCRIPTIN.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAF32AC0B7990061E87C /* SCRIPTIN.ttf */; };
+		AFDCAB1C2AC0B79A0061E87C /* ExtraOrnamentalNo2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAF42AC0B7990061E87C /* ExtraOrnamentalNo2.ttf */; };
+		AFDCAB1D2AC0B79A0061E87C /* Alpine.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAF52AC0B7990061E87C /* Alpine.ttf */; };
+		AFDCAB1E2AC0B79A0061E87C /* Pentagon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAF62AC0B7990061E87C /* Pentagon.ttf */; };
+		AFDCAB1F2AC0B79A0061E87C /* JeanSunHo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAF72AC0B7990061E87C /* JeanSunHo.ttf */; };
+		AFDCAB202AC0B79A0061E87C /* Kamikaze-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAF82AC0B7990061E87C /* Kamikaze-Italic.ttf */; };
+		AFDCAB212AC0B79A0061E87C /* RacingSansOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAF92AC0B7990061E87C /* RacingSansOne-Regular.ttf */; };
+		AFDCAB222AC0B79A0061E87C /* Facon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAFA2AC0B7990061E87C /* Facon.ttf */; };
+		AFDCAB232AC0B79A0061E87C /* lexo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAFB2AC0B7990061E87C /* lexo.ttf */; };
+		AFDCAB242AC0B79A0061E87C /* TooneyNoodleNF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAFC2AC0B7990061E87C /* TooneyNoodleNF.ttf */; };
+		AFDCAB252AC0B79A0061E87C /* Medici Text.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAFD2AC0B7990061E87C /* Medici Text.ttf */; };
+		AFDCAB262AC0B79A0061E87C /* ChubbyDotty.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAFE2AC0B7990061E87C /* ChubbyDotty.ttf */; };
+		AFDCAB272AC0B79A0061E87C /* Eutemia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAFF2AC0B7990061E87C /* Eutemia.ttf */; };
+		AFDCAB282AC0B79A0061E87C /* Devonshire-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAB002AC0B79A0061E87C /* Devonshire-Regular.ttf */; };
+		AFDCAB292AC0B79A0061E87C /* Pinewood.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAB012AC0B79A0061E87C /* Pinewood.ttf */; };
+		AFDCAB2A2AC0B79A0061E87C /* Canterbury.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAB022AC0B79A0061E87C /* Canterbury.ttf */; };
+		AFDCAB2B2AC0B79A0061E87C /* Zombie_Holocaust.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAB032AC0B79A0061E87C /* Zombie_Holocaust.ttf */; };
+		AFDCAB2C2AC0B79A0061E87C /* MetalMacabre.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAB042AC0B79A0061E87C /* MetalMacabre.ttf */; };
+		AFDCAB2D2AC0B79A0061E87C /* AlexBrush-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAB052AC0B79A0061E87C /* AlexBrush-Regular.ttf */; };
+		AFDCAB2E2AC0B7BD0061E87C /* Adine Kirnberg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAE02AC0B7980061E87C /* Adine Kirnberg.ttf */; };
+		AFDCAB2F2AC0B7BD0061E87C /* AlexBrush-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAB052AC0B79A0061E87C /* AlexBrush-Regular.ttf */; };
+		AFDCAB302AC0B7BD0061E87C /* Alpine.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAF52AC0B7990061E87C /* Alpine.ttf */; };
+		AFDCAB312AC0B7BD0061E87C /* Archistico_Simple.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAEA2AC0B7990061E87C /* Archistico_Simple.ttf */; };
+		AFDCAB322AC0B7BD0061E87C /* burnstown dam.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAE92AC0B7990061E87C /* burnstown dam.ttf */; };
+		AFDCAB332AC0B7BD0061E87C /* CandyTime.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAADE2AC0B7980061E87C /* CandyTime.ttf */; };
+		AFDCAB342AC0B7BD0061E87C /* Canterbury.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAB022AC0B79A0061E87C /* Canterbury.ttf */; };
+		AFDCAB352AC0B7BD0061E87C /* cenobyte.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAEF2AC0B7990061E87C /* cenobyte.ttf */; };
+		AFDCAB362AC0B7BD0061E87C /* ChopinScript.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAE32AC0B7990061E87C /* ChopinScript.ttf */; };
+		AFDCAB372AC0B7BD0061E87C /* ChubbyDotty.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAFE2AC0B7990061E87C /* ChubbyDotty.ttf */; };
+		AFDCAB382AC0B7BD0061E87C /* Curely-Free Typeface.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAE82AC0B7990061E87C /* Curely-Free Typeface.ttf */; };
+		AFDCAB392AC0B7BD0061E87C /* Devonshire-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAB002AC0B79A0061E87C /* Devonshire-Regular.ttf */; };
+		AFDCAB3A2AC0B7BD0061E87C /* earwig factory rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAEC2AC0B7990061E87C /* earwig factory rg.ttf */; };
+		AFDCAB3B2AC0B7BD0061E87C /* electroharmonix.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAF02AC0B7990061E87C /* electroharmonix.ttf */; };
+		AFDCAB3C2AC0B7BD0061E87C /* ElsieSwashCaps-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAEE2AC0B7990061E87C /* ElsieSwashCaps-Black.ttf */; };
+		AFDCAB3D2AC0B7BD0061E87C /* Eutemia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAFF2AC0B7990061E87C /* Eutemia.ttf */; };
+		AFDCAB3E2AC0B7BD0061E87C /* ExtraOrnamentalNo2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAF42AC0B7990061E87C /* ExtraOrnamentalNo2.ttf */; };
+		AFDCAB3F2AC0B7BD0061E87C /* Facon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAFA2AC0B7990061E87C /* Facon.ttf */; };
+		AFDCAB402AC0B7BD0061E87C /* FrederickatheGreat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAE62AC0B7990061E87C /* FrederickatheGreat-Regular.ttf */; };
+		AFDCAB412AC0B7BD0061E87C /* Gypsy Curse.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAE72AC0B7990061E87C /* Gypsy Curse.ttf */; };
+		AFDCAB422AC0B7BD0061E87C /* Halo3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAED2AC0B7990061E87C /* Halo3.ttf */; };
+		AFDCAB432AC0B7BD0061E87C /* JeanSunHo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAF72AC0B7990061E87C /* JeanSunHo.ttf */; };
+		AFDCAB442AC0B7BD0061E87C /* Kamikaze-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAF82AC0B7990061E87C /* Kamikaze-Italic.ttf */; };
+		AFDCAB452AC0B7BD0061E87C /* Kamikaze3DGradient.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAADF2AC0B7980061E87C /* Kamikaze3DGradient.ttf */; };
+		AFDCAB462AC0B7BD0061E87C /* lexo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAFB2AC0B7990061E87C /* lexo.ttf */; };
+		AFDCAB472AC0B7BD0061E87C /* LoversQuarrel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAEB2AC0B7990061E87C /* LoversQuarrel-Regular.ttf */; };
+		AFDCAB482AC0B7BD0061E87C /* Medici Text.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAFD2AC0B7990061E87C /* Medici Text.ttf */; };
+		AFDCAB492AC0B7BD0061E87C /* MessingLettern.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAF12AC0B7990061E87C /* MessingLettern.ttf */; };
+		AFDCAB4A2AC0B7BD0061E87C /* MetalMacabre.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAB042AC0B79A0061E87C /* MetalMacabre.ttf */; };
+		AFDCAB4B2AC0B7BD0061E87C /* Monoton-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAE52AC0B7990061E87C /* Monoton-Regular.ttf */; };
+		AFDCAB4C2AC0B7BD0061E87C /* Parisienne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAE42AC0B7990061E87C /* Parisienne-Regular.ttf */; };
+		AFDCAB4D2AC0B7BD0061E87C /* Pentagon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAF62AC0B7990061E87C /* Pentagon.ttf */; };
+		AFDCAB4E2AC0B7BD0061E87C /* Pinewood.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAB012AC0B79A0061E87C /* Pinewood.ttf */; };
+		AFDCAB4F2AC0B7BD0061E87C /* PixelFJVerdana12pt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAF22AC0B7990061E87C /* PixelFJVerdana12pt.ttf */; };
+		AFDCAB502AC0B7BD0061E87C /* Precious.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAE12AC0B7980061E87C /* Precious.ttf */; };
+		AFDCAB512AC0B7BD0061E87C /* PrinceValiant.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAE22AC0B7980061E87C /* PrinceValiant.ttf */; };
+		AFDCAB522AC0B7BD0061E87C /* RacingSansOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAF92AC0B7990061E87C /* RacingSansOne-Regular.ttf */; };
+		AFDCAB532AC0B7BD0061E87C /* SCRIPTIN.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAF32AC0B7990061E87C /* SCRIPTIN.ttf */; };
+		AFDCAB542AC0B7BD0061E87C /* TooneyNoodleNF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAAFC2AC0B7990061E87C /* TooneyNoodleNF.ttf */; };
+		AFDCAB552AC0B7BD0061E87C /* Zombie_Holocaust.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAB032AC0B79A0061E87C /* Zombie_Holocaust.ttf */; };
+		AFDCAB572AC0B8A90061E87C /* ArchitectsDaughter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAB562AC0B8A90061E87C /* ArchitectsDaughter-Regular.ttf */; };
+		AFDCAB582AC0B8BF0061E87C /* ArchitectsDaughter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAB562AC0B8A90061E87C /* ArchitectsDaughter-Regular.ttf */; };
+		AFDCAB962AC3CC660061E87C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCAB952AC3CC660061E87C /* ImagePicker.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFDCAA182AC06AFB0061E87C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFDCA9FF2AC06AFA0061E87C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFDCAA062AC06AFA0061E87C;
+			remoteInfo = TestCustomKeyboard;
+		};
+		AFDCAA222AC06AFB0061E87C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFDCA9FF2AC06AFA0061E87C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFDCAA062AC06AFA0061E87C;
+			remoteInfo = TestCustomKeyboard;
+		};
+		AFDCAA3D2AC06B830061E87C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFDCA9FF2AC06AFA0061E87C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFDCAA372AC06B830061E87C;
+			remoteInfo = CustomKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AFDCAA432AC06B830061E87C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AFDCAA3F2AC06B830061E87C /* CustomKeyboard.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AFDCAA072AC06AFA0061E87C /* TestCustomKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCustomKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFDCAA0A2AC06AFA0061E87C /* TestCustomKeyboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCustomKeyboardApp.swift; sourceTree = "<group>"; };
+		AFDCAA0C2AC06AFA0061E87C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AFDCAA0E2AC06AFB0061E87C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFDCAA112AC06AFB0061E87C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AFDCAA172AC06AFB0061E87C /* TestCustomKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCustomKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFDCAA1B2AC06AFB0061E87C /* TestCustomKeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCustomKeyboardTests.swift; sourceTree = "<group>"; };
+		AFDCAA212AC06AFB0061E87C /* TestCustomKeyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCustomKeyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFDCAA252AC06AFB0061E87C /* TestCustomKeyboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCustomKeyboardUITests.swift; sourceTree = "<group>"; };
+		AFDCAA272AC06AFB0061E87C /* TestCustomKeyboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCustomKeyboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AFDCAA382AC06B830061E87C /* CustomKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CustomKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFDCAA3A2AC06B830061E87C /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		AFDCAA3C2AC06B830061E87C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFDCAA442AC06D3D0061E87C /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		AFDCAA472AC06EA10061E87C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AFDCAA492AC0719F0061E87C /* View+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+BackgroundColor.swift"; sourceTree = "<group>"; };
+		AFDCAA4C2AC075070061E87C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFDCAADE2AC0B7980061E87C /* CandyTime.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CandyTime.ttf; sourceTree = "<group>"; };
+		AFDCAADF2AC0B7980061E87C /* Kamikaze3DGradient.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kamikaze3DGradient.ttf; sourceTree = "<group>"; };
+		AFDCAAE02AC0B7980061E87C /* Adine Kirnberg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adine Kirnberg.ttf"; sourceTree = "<group>"; };
+		AFDCAAE12AC0B7980061E87C /* Precious.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Precious.ttf; sourceTree = "<group>"; };
+		AFDCAAE22AC0B7980061E87C /* PrinceValiant.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PrinceValiant.ttf; sourceTree = "<group>"; };
+		AFDCAAE32AC0B7990061E87C /* ChopinScript.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChopinScript.ttf; sourceTree = "<group>"; };
+		AFDCAAE42AC0B7990061E87C /* Parisienne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Parisienne-Regular.ttf"; sourceTree = "<group>"; };
+		AFDCAAE52AC0B7990061E87C /* Monoton-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Monoton-Regular.ttf"; sourceTree = "<group>"; };
+		AFDCAAE62AC0B7990061E87C /* FrederickatheGreat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrederickatheGreat-Regular.ttf"; sourceTree = "<group>"; };
+		AFDCAAE72AC0B7990061E87C /* Gypsy Curse.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gypsy Curse.ttf"; sourceTree = "<group>"; };
+		AFDCAAE82AC0B7990061E87C /* Curely-Free Typeface.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Curely-Free Typeface.ttf"; sourceTree = "<group>"; };
+		AFDCAAE92AC0B7990061E87C /* burnstown dam.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "burnstown dam.ttf"; sourceTree = "<group>"; };
+		AFDCAAEA2AC0B7990061E87C /* Archistico_Simple.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Archistico_Simple.ttf; sourceTree = "<group>"; };
+		AFDCAAEB2AC0B7990061E87C /* LoversQuarrel-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LoversQuarrel-Regular.ttf"; sourceTree = "<group>"; };
+		AFDCAAEC2AC0B7990061E87C /* earwig factory rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "earwig factory rg.ttf"; sourceTree = "<group>"; };
+		AFDCAAED2AC0B7990061E87C /* Halo3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Halo3.ttf; sourceTree = "<group>"; };
+		AFDCAAEE2AC0B7990061E87C /* ElsieSwashCaps-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ElsieSwashCaps-Black.ttf"; sourceTree = "<group>"; };
+		AFDCAAEF2AC0B7990061E87C /* cenobyte.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cenobyte.ttf; sourceTree = "<group>"; };
+		AFDCAAF02AC0B7990061E87C /* electroharmonix.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = electroharmonix.ttf; sourceTree = "<group>"; };
+		AFDCAAF12AC0B7990061E87C /* MessingLettern.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MessingLettern.ttf; sourceTree = "<group>"; };
+		AFDCAAF22AC0B7990061E87C /* PixelFJVerdana12pt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PixelFJVerdana12pt.ttf; sourceTree = "<group>"; };
+		AFDCAAF32AC0B7990061E87C /* SCRIPTIN.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCRIPTIN.ttf; sourceTree = "<group>"; };
+		AFDCAAF42AC0B7990061E87C /* ExtraOrnamentalNo2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ExtraOrnamentalNo2.ttf; sourceTree = "<group>"; };
+		AFDCAAF52AC0B7990061E87C /* Alpine.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Alpine.ttf; sourceTree = "<group>"; };
+		AFDCAAF62AC0B7990061E87C /* Pentagon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pentagon.ttf; sourceTree = "<group>"; };
+		AFDCAAF72AC0B7990061E87C /* JeanSunHo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = JeanSunHo.ttf; sourceTree = "<group>"; };
+		AFDCAAF82AC0B7990061E87C /* Kamikaze-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kamikaze-Italic.ttf"; sourceTree = "<group>"; };
+		AFDCAAF92AC0B7990061E87C /* RacingSansOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RacingSansOne-Regular.ttf"; sourceTree = "<group>"; };
+		AFDCAAFA2AC0B7990061E87C /* Facon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Facon.ttf; sourceTree = "<group>"; };
+		AFDCAAFB2AC0B7990061E87C /* lexo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lexo.ttf; sourceTree = "<group>"; };
+		AFDCAAFC2AC0B7990061E87C /* TooneyNoodleNF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TooneyNoodleNF.ttf; sourceTree = "<group>"; };
+		AFDCAAFD2AC0B7990061E87C /* Medici Text.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Medici Text.ttf"; sourceTree = "<group>"; };
+		AFDCAAFE2AC0B7990061E87C /* ChubbyDotty.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChubbyDotty.ttf; sourceTree = "<group>"; };
+		AFDCAAFF2AC0B7990061E87C /* Eutemia.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Eutemia.ttf; sourceTree = "<group>"; };
+		AFDCAB002AC0B79A0061E87C /* Devonshire-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Devonshire-Regular.ttf"; sourceTree = "<group>"; };
+		AFDCAB012AC0B79A0061E87C /* Pinewood.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pinewood.ttf; sourceTree = "<group>"; };
+		AFDCAB022AC0B79A0061E87C /* Canterbury.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Canterbury.ttf; sourceTree = "<group>"; };
+		AFDCAB032AC0B79A0061E87C /* Zombie_Holocaust.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zombie_Holocaust.ttf; sourceTree = "<group>"; };
+		AFDCAB042AC0B79A0061E87C /* MetalMacabre.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MetalMacabre.ttf; sourceTree = "<group>"; };
+		AFDCAB052AC0B79A0061E87C /* AlexBrush-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlexBrush-Regular.ttf"; sourceTree = "<group>"; };
+		AFDCAB562AC0B8A90061E87C /* ArchitectsDaughter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArchitectsDaughter-Regular.ttf"; sourceTree = "<group>"; };
+		AFDCAB952AC3CC660061E87C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFDCAA042AC06AFA0061E87C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFDCAA142AC06AFB0061E87C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFDCAA1E2AC06AFB0061E87C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFDCAA352AC06B830061E87C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFDCA9FE2AC06AFA0061E87C = {
+			isa = PBXGroup;
+			children = (
+				AFDCAA092AC06AFA0061E87C /* TestCustomKeyboard */,
+				AFDCAA1A2AC06AFB0061E87C /* TestCustomKeyboardTests */,
+				AFDCAA242AC06AFB0061E87C /* TestCustomKeyboardUITests */,
+				AFDCAA392AC06B830061E87C /* CustomKeyboard */,
+				AFDCAA082AC06AFA0061E87C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFDCAA082AC06AFA0061E87C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFDCAA072AC06AFA0061E87C /* TestCustomKeyboard.app */,
+				AFDCAA172AC06AFB0061E87C /* TestCustomKeyboardTests.xctest */,
+				AFDCAA212AC06AFB0061E87C /* TestCustomKeyboardUITests.xctest */,
+				AFDCAA382AC06B830061E87C /* CustomKeyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFDCAA092AC06AFA0061E87C /* TestCustomKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AFDCAA0A2AC06AFA0061E87C /* TestCustomKeyboardApp.swift */,
+				AFDCAA0C2AC06AFA0061E87C /* ContentView.swift */,
+				AFDCAB952AC3CC660061E87C /* ImagePicker.swift */,
+				AFDCAA0E2AC06AFB0061E87C /* Assets.xcassets */,
+				AFDCAA102AC06AFB0061E87C /* Preview Content */,
+			);
+			path = TestCustomKeyboard;
+			sourceTree = "<group>";
+		};
+		AFDCAA102AC06AFB0061E87C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AFDCAA112AC06AFB0061E87C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AFDCAA1A2AC06AFB0061E87C /* TestCustomKeyboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFDCAA1B2AC06AFB0061E87C /* TestCustomKeyboardTests.swift */,
+			);
+			path = TestCustomKeyboardTests;
+			sourceTree = "<group>";
+		};
+		AFDCAA242AC06AFB0061E87C /* TestCustomKeyboardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AFDCAA252AC06AFB0061E87C /* TestCustomKeyboardUITests.swift */,
+				AFDCAA272AC06AFB0061E87C /* TestCustomKeyboardUITestsLaunchTests.swift */,
+			);
+			path = TestCustomKeyboardUITests;
+			sourceTree = "<group>";
+		};
+		AFDCAA392AC06B830061E87C /* CustomKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AFDCAA3A2AC06B830061E87C /* KeyboardViewController.swift */,
+				AFDCAA442AC06D3D0061E87C /* KeyboardView.swift */,
+				AFDCAA472AC06EA10061E87C /* Constants.swift */,
+				AFDCAA492AC0719F0061E87C /* View+BackgroundColor.swift */,
+				AFDCAA732AC0A3BD0061E87C /* Font */,
+				AFDCAA4C2AC075070061E87C /* Assets.xcassets */,
+				AFDCAA3C2AC06B830061E87C /* Info.plist */,
+			);
+			path = CustomKeyboard;
+			sourceTree = "<group>";
+		};
+		AFDCAA732AC0A3BD0061E87C /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				AFDCAAE02AC0B7980061E87C /* Adine Kirnberg.ttf */,
+				AFDCAB562AC0B8A90061E87C /* ArchitectsDaughter-Regular.ttf */,
+				AFDCAB052AC0B79A0061E87C /* AlexBrush-Regular.ttf */,
+				AFDCAAF52AC0B7990061E87C /* Alpine.ttf */,
+				AFDCAAEA2AC0B7990061E87C /* Archistico_Simple.ttf */,
+				AFDCAAE92AC0B7990061E87C /* burnstown dam.ttf */,
+				AFDCAADE2AC0B7980061E87C /* CandyTime.ttf */,
+				AFDCAB022AC0B79A0061E87C /* Canterbury.ttf */,
+				AFDCAAEF2AC0B7990061E87C /* cenobyte.ttf */,
+				AFDCAAE32AC0B7990061E87C /* ChopinScript.ttf */,
+				AFDCAAFE2AC0B7990061E87C /* ChubbyDotty.ttf */,
+				AFDCAAE82AC0B7990061E87C /* Curely-Free Typeface.ttf */,
+				AFDCAB002AC0B79A0061E87C /* Devonshire-Regular.ttf */,
+				AFDCAAEC2AC0B7990061E87C /* earwig factory rg.ttf */,
+				AFDCAAF02AC0B7990061E87C /* electroharmonix.ttf */,
+				AFDCAAEE2AC0B7990061E87C /* ElsieSwashCaps-Black.ttf */,
+				AFDCAAFF2AC0B7990061E87C /* Eutemia.ttf */,
+				AFDCAAF42AC0B7990061E87C /* ExtraOrnamentalNo2.ttf */,
+				AFDCAAFA2AC0B7990061E87C /* Facon.ttf */,
+				AFDCAAE62AC0B7990061E87C /* FrederickatheGreat-Regular.ttf */,
+				AFDCAAE72AC0B7990061E87C /* Gypsy Curse.ttf */,
+				AFDCAAED2AC0B7990061E87C /* Halo3.ttf */,
+				AFDCAAF72AC0B7990061E87C /* JeanSunHo.ttf */,
+				AFDCAAF82AC0B7990061E87C /* Kamikaze-Italic.ttf */,
+				AFDCAADF2AC0B7980061E87C /* Kamikaze3DGradient.ttf */,
+				AFDCAAFB2AC0B7990061E87C /* lexo.ttf */,
+				AFDCAAEB2AC0B7990061E87C /* LoversQuarrel-Regular.ttf */,
+				AFDCAAFD2AC0B7990061E87C /* Medici Text.ttf */,
+				AFDCAAF12AC0B7990061E87C /* MessingLettern.ttf */,
+				AFDCAB042AC0B79A0061E87C /* MetalMacabre.ttf */,
+				AFDCAAE52AC0B7990061E87C /* Monoton-Regular.ttf */,
+				AFDCAAE42AC0B7990061E87C /* Parisienne-Regular.ttf */,
+				AFDCAAF62AC0B7990061E87C /* Pentagon.ttf */,
+				AFDCAB012AC0B79A0061E87C /* Pinewood.ttf */,
+				AFDCAAF22AC0B7990061E87C /* PixelFJVerdana12pt.ttf */,
+				AFDCAAE12AC0B7980061E87C /* Precious.ttf */,
+				AFDCAAE22AC0B7980061E87C /* PrinceValiant.ttf */,
+				AFDCAAF92AC0B7990061E87C /* RacingSansOne-Regular.ttf */,
+				AFDCAAF32AC0B7990061E87C /* SCRIPTIN.ttf */,
+				AFDCAAFC2AC0B7990061E87C /* TooneyNoodleNF.ttf */,
+				AFDCAB032AC0B79A0061E87C /* Zombie_Holocaust.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFDCAA062AC06AFA0061E87C /* TestCustomKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFDCAA2B2AC06AFB0061E87C /* Build configuration list for PBXNativeTarget "TestCustomKeyboard" */;
+			buildPhases = (
+				AFDCAA032AC06AFA0061E87C /* Sources */,
+				AFDCAA042AC06AFA0061E87C /* Frameworks */,
+				AFDCAA052AC06AFA0061E87C /* Resources */,
+				AFDCAA432AC06B830061E87C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFDCAA3E2AC06B830061E87C /* PBXTargetDependency */,
+			);
+			name = TestCustomKeyboard;
+			productName = TestCustomKeyboard;
+			productReference = AFDCAA072AC06AFA0061E87C /* TestCustomKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFDCAA162AC06AFB0061E87C /* TestCustomKeyboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFDCAA2E2AC06AFB0061E87C /* Build configuration list for PBXNativeTarget "TestCustomKeyboardTests" */;
+			buildPhases = (
+				AFDCAA132AC06AFB0061E87C /* Sources */,
+				AFDCAA142AC06AFB0061E87C /* Frameworks */,
+				AFDCAA152AC06AFB0061E87C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFDCAA192AC06AFB0061E87C /* PBXTargetDependency */,
+			);
+			name = TestCustomKeyboardTests;
+			productName = TestCustomKeyboardTests;
+			productReference = AFDCAA172AC06AFB0061E87C /* TestCustomKeyboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFDCAA202AC06AFB0061E87C /* TestCustomKeyboardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFDCAA312AC06AFB0061E87C /* Build configuration list for PBXNativeTarget "TestCustomKeyboardUITests" */;
+			buildPhases = (
+				AFDCAA1D2AC06AFB0061E87C /* Sources */,
+				AFDCAA1E2AC06AFB0061E87C /* Frameworks */,
+				AFDCAA1F2AC06AFB0061E87C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFDCAA232AC06AFB0061E87C /* PBXTargetDependency */,
+			);
+			name = TestCustomKeyboardUITests;
+			productName = TestCustomKeyboardUITests;
+			productReference = AFDCAA212AC06AFB0061E87C /* TestCustomKeyboardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		AFDCAA372AC06B830061E87C /* CustomKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFDCAA402AC06B830061E87C /* Build configuration list for PBXNativeTarget "CustomKeyboard" */;
+			buildPhases = (
+				AFDCAA342AC06B830061E87C /* Sources */,
+				AFDCAA352AC06B830061E87C /* Frameworks */,
+				AFDCAA362AC06B830061E87C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomKeyboard;
+			productName = CustomKeyboard;
+			productReference = AFDCAA382AC06B830061E87C /* CustomKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFDCA9FF2AC06AFA0061E87C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AFDCAA062AC06AFA0061E87C = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					AFDCAA162AC06AFB0061E87C = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = AFDCAA062AC06AFA0061E87C;
+					};
+					AFDCAA202AC06AFB0061E87C = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = AFDCAA062AC06AFA0061E87C;
+					};
+					AFDCAA372AC06B830061E87C = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AFDCAA022AC06AFA0061E87C /* Build configuration list for PBXProject "TestCustomKeyboard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFDCA9FE2AC06AFA0061E87C;
+			productRefGroup = AFDCAA082AC06AFA0061E87C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFDCAA062AC06AFA0061E87C /* TestCustomKeyboard */,
+				AFDCAA162AC06AFB0061E87C /* TestCustomKeyboardTests */,
+				AFDCAA202AC06AFB0061E87C /* TestCustomKeyboardUITests */,
+				AFDCAA372AC06B830061E87C /* CustomKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFDCAA052AC06AFA0061E87C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFDCAB582AC0B8BF0061E87C /* ArchitectsDaughter-Regular.ttf in Resources */,
+				AFDCAB2E2AC0B7BD0061E87C /* Adine Kirnberg.ttf in Resources */,
+				AFDCAB2F2AC0B7BD0061E87C /* AlexBrush-Regular.ttf in Resources */,
+				AFDCAB302AC0B7BD0061E87C /* Alpine.ttf in Resources */,
+				AFDCAB312AC0B7BD0061E87C /* Archistico_Simple.ttf in Resources */,
+				AFDCAB322AC0B7BD0061E87C /* burnstown dam.ttf in Resources */,
+				AFDCAB332AC0B7BD0061E87C /* CandyTime.ttf in Resources */,
+				AFDCAB342AC0B7BD0061E87C /* Canterbury.ttf in Resources */,
+				AFDCAB352AC0B7BD0061E87C /* cenobyte.ttf in Resources */,
+				AFDCAB362AC0B7BD0061E87C /* ChopinScript.ttf in Resources */,
+				AFDCAB372AC0B7BD0061E87C /* ChubbyDotty.ttf in Resources */,
+				AFDCAB382AC0B7BD0061E87C /* Curely-Free Typeface.ttf in Resources */,
+				AFDCAB392AC0B7BD0061E87C /* Devonshire-Regular.ttf in Resources */,
+				AFDCAB3A2AC0B7BD0061E87C /* earwig factory rg.ttf in Resources */,
+				AFDCAB3B2AC0B7BD0061E87C /* electroharmonix.ttf in Resources */,
+				AFDCAB3C2AC0B7BD0061E87C /* ElsieSwashCaps-Black.ttf in Resources */,
+				AFDCAB3D2AC0B7BD0061E87C /* Eutemia.ttf in Resources */,
+				AFDCAB3E2AC0B7BD0061E87C /* ExtraOrnamentalNo2.ttf in Resources */,
+				AFDCAB3F2AC0B7BD0061E87C /* Facon.ttf in Resources */,
+				AFDCAB402AC0B7BD0061E87C /* FrederickatheGreat-Regular.ttf in Resources */,
+				AFDCAB412AC0B7BD0061E87C /* Gypsy Curse.ttf in Resources */,
+				AFDCAB422AC0B7BD0061E87C /* Halo3.ttf in Resources */,
+				AFDCAB432AC0B7BD0061E87C /* JeanSunHo.ttf in Resources */,
+				AFDCAB442AC0B7BD0061E87C /* Kamikaze-Italic.ttf in Resources */,
+				AFDCAB452AC0B7BD0061E87C /* Kamikaze3DGradient.ttf in Resources */,
+				AFDCAB462AC0B7BD0061E87C /* lexo.ttf in Resources */,
+				AFDCAB472AC0B7BD0061E87C /* LoversQuarrel-Regular.ttf in Resources */,
+				AFDCAB482AC0B7BD0061E87C /* Medici Text.ttf in Resources */,
+				AFDCAB492AC0B7BD0061E87C /* MessingLettern.ttf in Resources */,
+				AFDCAB4A2AC0B7BD0061E87C /* MetalMacabre.ttf in Resources */,
+				AFDCAB4B2AC0B7BD0061E87C /* Monoton-Regular.ttf in Resources */,
+				AFDCAB4C2AC0B7BD0061E87C /* Parisienne-Regular.ttf in Resources */,
+				AFDCAB4D2AC0B7BD0061E87C /* Pentagon.ttf in Resources */,
+				AFDCAB4E2AC0B7BD0061E87C /* Pinewood.ttf in Resources */,
+				AFDCAB4F2AC0B7BD0061E87C /* PixelFJVerdana12pt.ttf in Resources */,
+				AFDCAB502AC0B7BD0061E87C /* Precious.ttf in Resources */,
+				AFDCAB512AC0B7BD0061E87C /* PrinceValiant.ttf in Resources */,
+				AFDCAB522AC0B7BD0061E87C /* RacingSansOne-Regular.ttf in Resources */,
+				AFDCAB532AC0B7BD0061E87C /* SCRIPTIN.ttf in Resources */,
+				AFDCAB542AC0B7BD0061E87C /* TooneyNoodleNF.ttf in Resources */,
+				AFDCAB552AC0B7BD0061E87C /* Zombie_Holocaust.ttf in Resources */,
+				AFDCAA122AC06AFB0061E87C /* Preview Assets.xcassets in Resources */,
+				AFDCAA712AC09CE80061E87C /* Assets.xcassets in Resources */,
+				AFDCAA0F2AC06AFB0061E87C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFDCAA152AC06AFB0061E87C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFDCAA1F2AC06AFB0061E87C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFDCAA362AC06B830061E87C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFDCAB102AC0B79A0061E87C /* Curely-Free Typeface.ttf in Resources */,
+				AFDCAB2B2AC0B79A0061E87C /* Zombie_Holocaust.ttf in Resources */,
+				AFDCAB242AC0B79A0061E87C /* TooneyNoodleNF.ttf in Resources */,
+				AFDCAB142AC0B79A0061E87C /* earwig factory rg.ttf in Resources */,
+				AFDCAB1E2AC0B79A0061E87C /* Pentagon.ttf in Resources */,
+				AFDCAB232AC0B79A0061E87C /* lexo.ttf in Resources */,
+				AFDCAB252AC0B79A0061E87C /* Medici Text.ttf in Resources */,
+				AFDCAB272AC0B79A0061E87C /* Eutemia.ttf in Resources */,
+				AFDCAB2A2AC0B79A0061E87C /* Canterbury.ttf in Resources */,
+				AFDCAB152AC0B79A0061E87C /* Halo3.ttf in Resources */,
+				AFDCAB2C2AC0B79A0061E87C /* MetalMacabre.ttf in Resources */,
+				AFDCAB222AC0B79A0061E87C /* Facon.ttf in Resources */,
+				AFDCAB0F2AC0B79A0061E87C /* Gypsy Curse.ttf in Resources */,
+				AFDCAB172AC0B79A0061E87C /* cenobyte.ttf in Resources */,
+				AFDCAB092AC0B79A0061E87C /* Precious.ttf in Resources */,
+				AFDCAB2D2AC0B79A0061E87C /* AlexBrush-Regular.ttf in Resources */,
+				AFDCAB202AC0B79A0061E87C /* Kamikaze-Italic.ttf in Resources */,
+				AFDCAB212AC0B79A0061E87C /* RacingSansOne-Regular.ttf in Resources */,
+				AFDCAB1A2AC0B79A0061E87C /* PixelFJVerdana12pt.ttf in Resources */,
+				AFDCAB572AC0B8A90061E87C /* ArchitectsDaughter-Regular.ttf in Resources */,
+				AFDCAB1D2AC0B79A0061E87C /* Alpine.ttf in Resources */,
+				AFDCAB132AC0B79A0061E87C /* LoversQuarrel-Regular.ttf in Resources */,
+				AFDCAB262AC0B79A0061E87C /* ChubbyDotty.ttf in Resources */,
+				AFDCAB122AC0B79A0061E87C /* Archistico_Simple.ttf in Resources */,
+				AFDCAB1B2AC0B79A0061E87C /* SCRIPTIN.ttf in Resources */,
+				AFDCAB0E2AC0B79A0061E87C /* FrederickatheGreat-Regular.ttf in Resources */,
+				AFDCAB072AC0B79A0061E87C /* Kamikaze3DGradient.ttf in Resources */,
+				AFDCAA4D2AC075070061E87C /* Assets.xcassets in Resources */,
+				AFDCAB1F2AC0B79A0061E87C /* JeanSunHo.ttf in Resources */,
+				AFDCAB0D2AC0B79A0061E87C /* Monoton-Regular.ttf in Resources */,
+				AFDCAB1C2AC0B79A0061E87C /* ExtraOrnamentalNo2.ttf in Resources */,
+				AFDCAB112AC0B79A0061E87C /* burnstown dam.ttf in Resources */,
+				AFDCAB0A2AC0B79A0061E87C /* PrinceValiant.ttf in Resources */,
+				AFDCAB282AC0B79A0061E87C /* Devonshire-Regular.ttf in Resources */,
+				AFDCAB0B2AC0B79A0061E87C /* ChopinScript.ttf in Resources */,
+				AFDCAB192AC0B79A0061E87C /* MessingLettern.ttf in Resources */,
+				AFDCAB182AC0B79A0061E87C /* electroharmonix.ttf in Resources */,
+				AFDCAB062AC0B79A0061E87C /* CandyTime.ttf in Resources */,
+				AFDCAB292AC0B79A0061E87C /* Pinewood.ttf in Resources */,
+				AFDCAB162AC0B79A0061E87C /* ElsieSwashCaps-Black.ttf in Resources */,
+				AFDCAB082AC0B79A0061E87C /* Adine Kirnberg.ttf in Resources */,
+				AFDCAB0C2AC0B79A0061E87C /* Parisienne-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFDCAA032AC06AFA0061E87C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFDCAA0D2AC06AFA0061E87C /* ContentView.swift in Sources */,
+				AFDCAA4E2AC0753A0061E87C /* KeyboardView.swift in Sources */,
+				AFDCAA722AC09E2D0061E87C /* View+BackgroundColor.swift in Sources */,
+				AFDCAB962AC3CC660061E87C /* ImagePicker.swift in Sources */,
+				AFDCAA0B2AC06AFA0061E87C /* TestCustomKeyboardApp.swift in Sources */,
+				AFDCAA4B2AC072970061E87C /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFDCAA132AC06AFB0061E87C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFDCAA1C2AC06AFB0061E87C /* TestCustomKeyboardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFDCAA1D2AC06AFB0061E87C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFDCAA282AC06AFB0061E87C /* TestCustomKeyboardUITestsLaunchTests.swift in Sources */,
+				AFDCAA262AC06AFB0061E87C /* TestCustomKeyboardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFDCAA342AC06B830061E87C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFDCAA3B2AC06B830061E87C /* KeyboardViewController.swift in Sources */,
+				AFDCAA452AC06D3D0061E87C /* KeyboardView.swift in Sources */,
+				AFDCAA4A2AC0719F0061E87C /* View+BackgroundColor.swift in Sources */,
+				AFDCAA482AC06EA10061E87C /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFDCAA192AC06AFB0061E87C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFDCAA062AC06AFA0061E87C /* TestCustomKeyboard */;
+			targetProxy = AFDCAA182AC06AFB0061E87C /* PBXContainerItemProxy */;
+		};
+		AFDCAA232AC06AFB0061E87C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFDCAA062AC06AFA0061E87C /* TestCustomKeyboard */;
+			targetProxy = AFDCAA222AC06AFB0061E87C /* PBXContainerItemProxy */;
+		};
+		AFDCAA3E2AC06B830061E87C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFDCAA372AC06B830061E87C /* CustomKeyboard */;
+			targetProxy = AFDCAA3D2AC06B830061E87C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AFDCAA292AC06AFB0061E87C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFDCAA2A2AC06AFB0061E87C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFDCAA2C2AC06AFB0061E87C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TestCustomKeyboard/Preview Content\"";
+				DEVELOPMENT_TEAM = SHD85U93TL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "using photo";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "using photo";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nts.sixblack.TestCustomKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFDCAA2D2AC06AFB0061E87C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TestCustomKeyboard/Preview Content\"";
+				DEVELOPMENT_TEAM = SHD85U93TL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "using photo";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "using photo";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nts.sixblack.TestCustomKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFDCAA2F2AC06AFB0061E87C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SHD85U93TL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nts.sixblack.TestCustomKeyboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestCustomKeyboard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestCustomKeyboard";
+			};
+			name = Debug;
+		};
+		AFDCAA302AC06AFB0061E87C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SHD85U93TL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nts.sixblack.TestCustomKeyboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestCustomKeyboard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestCustomKeyboard";
+			};
+			name = Release;
+		};
+		AFDCAA322AC06AFB0061E87C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SHD85U93TL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nts.sixblack.TestCustomKeyboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestCustomKeyboard;
+			};
+			name = Debug;
+		};
+		AFDCAA332AC06AFB0061E87C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SHD85U93TL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nts.sixblack.TestCustomKeyboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestCustomKeyboard;
+			};
+			name = Release;
+		};
+		AFDCAA412AC06B830061E87C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SHD85U93TL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CustomKeyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nts.sixblack.TestCustomKeyboard.CustomKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFDCAA422AC06B830061E87C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SHD85U93TL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CustomKeyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nts.sixblack.TestCustomKeyboard.CustomKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFDCAA022AC06AFA0061E87C /* Build configuration list for PBXProject "TestCustomKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFDCAA292AC06AFB0061E87C /* Debug */,
+				AFDCAA2A2AC06AFB0061E87C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFDCAA2B2AC06AFB0061E87C /* Build configuration list for PBXNativeTarget "TestCustomKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFDCAA2C2AC06AFB0061E87C /* Debug */,
+				AFDCAA2D2AC06AFB0061E87C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFDCAA2E2AC06AFB0061E87C /* Build configuration list for PBXNativeTarget "TestCustomKeyboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFDCAA2F2AC06AFB0061E87C /* Debug */,
+				AFDCAA302AC06AFB0061E87C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFDCAA312AC06AFB0061E87C /* Build configuration list for PBXNativeTarget "TestCustomKeyboardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFDCAA322AC06AFB0061E87C /* Debug */,
+				AFDCAA332AC06AFB0061E87C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFDCAA402AC06B830061E87C /* Build configuration list for PBXNativeTarget "CustomKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFDCAA412AC06B830061E87C /* Debug */,
+				AFDCAA422AC06B830061E87C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFDCA9FF2AC06AFA0061E87C /* Project object */;
+}
