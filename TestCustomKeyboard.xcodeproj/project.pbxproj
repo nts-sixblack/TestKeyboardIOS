@@ -107,6 +107,8 @@
 		AFDCAB572AC0B8A90061E87C /* ArchitectsDaughter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAB562AC0B8A90061E87C /* ArchitectsDaughter-Regular.ttf */; };
 		AFDCAB582AC0B8BF0061E87C /* ArchitectsDaughter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDCAB562AC0B8A90061E87C /* ArchitectsDaughter-Regular.ttf */; };
 		AFDCAB962AC3CC660061E87C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCAB952AC3CC660061E87C /* ImagePicker.swift */; };
+		AFDCAB9A2AC52A440061E87C /* OrientationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCAB992AC52A440061E87C /* OrientationInfo.swift */; };
+		AFDCAB9B2AC52A7F0061E87C /* OrientationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDCAB992AC52A440061E87C /* OrientationInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,6 +209,7 @@
 		AFDCAB052AC0B79A0061E87C /* AlexBrush-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlexBrush-Regular.ttf"; sourceTree = "<group>"; };
 		AFDCAB562AC0B8A90061E87C /* ArchitectsDaughter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArchitectsDaughter-Regular.ttf"; sourceTree = "<group>"; };
 		AFDCAB952AC3CC660061E87C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		AFDCAB992AC52A440061E87C /* OrientationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,6 +310,7 @@
 				AFDCAA442AC06D3D0061E87C /* KeyboardView.swift */,
 				AFDCAA472AC06EA10061E87C /* Constants.swift */,
 				AFDCAA492AC0719F0061E87C /* View+BackgroundColor.swift */,
+				AFDCAB992AC52A440061E87C /* OrientationInfo.swift */,
 				AFDCAA732AC0A3BD0061E87C /* Font */,
 				AFDCAA4C2AC075070061E87C /* Assets.xcassets */,
 				AFDCAA3C2AC06B830061E87C /* Info.plist */,
@@ -611,6 +615,7 @@
 				AFDCAA722AC09E2D0061E87C /* View+BackgroundColor.swift in Sources */,
 				AFDCAB962AC3CC660061E87C /* ImagePicker.swift in Sources */,
 				AFDCAA0B2AC06AFA0061E87C /* TestCustomKeyboardApp.swift in Sources */,
+				AFDCAB9B2AC52A7F0061E87C /* OrientationInfo.swift in Sources */,
 				AFDCAA4B2AC072970061E87C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -640,6 +645,7 @@
 				AFDCAA452AC06D3D0061E87C /* KeyboardView.swift in Sources */,
 				AFDCAA4A2AC0719F0061E87C /* View+BackgroundColor.swift in Sources */,
 				AFDCAA482AC06EA10061E87C /* Constants.swift in Sources */,
+				AFDCAB9A2AC52A440061E87C /* OrientationInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,9 @@ import UIKit
 
 struct KeyboardView: View {
     
+    @Environment(\.verticalSizeClass) var verticalSizeClass: UserInterfaceSizeClass?
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass: UserInterfaceSizeClass?
+    
     enum KeyboardState: Int {
         case letters
         case numbers
@@ -29,6 +32,8 @@ struct KeyboardView: View {
     
     @State var keyboardState: KeyboardState = .letters
     @State var shiftButtonState: ShiftButtonState = .shift
+    
+    @State private var orientation = UIDeviceOrientation.unknown
     
     var body: some View {
         VStack {
@@ -81,19 +86,61 @@ struct KeyboardView: View {
             }
             .padding(.horizontal)
             
-            ForEach(0...keyboard[shiftButtonState.rawValue].count - 1, id: \.self) { row in
+            VStack (spacing: 0, content: {
                 HStack {
-                    ForEach(0...keyboard[shiftButtonState.rawValue][row].count - 1, id: \.self) { collumn in
-                        keyboardButton(text: keyboard[shiftButtonState.rawValue][row][collumn])
+                    ForEach(0...keyboard[shiftButtonState.rawValue][0].count - 1, id: \.self) { collumn in
+                        keyboardButton(text: keyboard[shiftButtonState.rawValue][0][collumn])
                     }
                 }
-            }
+                .frame(maxHeight: 40)
+                
+                HStack {
+                    ForEach(0...keyboard[shiftButtonState.rawValue][1].count - 1, id: \.self) { collumn in
+                        keyboardButton(text: keyboard[shiftButtonState.rawValue][1][collumn])
+                    }
+                }
+                .padding(.horizontal)
+                .frame(maxHeight: 40)
+                
+                HStack {
+                    ForEach(0...keyboard[shiftButtonState.rawValue][2].count - 1, id: \.self) { collumn in
+                        keyboardButton(text: keyboard[shiftButtonState.rawValue][2][collumn])
+                    }
+                }
+                .padding(.horizontal)
+                .frame(maxHeight: 40)
+                
+                HStack {
+                    ForEach(0...keyboard[shiftButtonState.rawValue][3].count - 1, id: \.self) { collumn in
+                        keyboardButton(text: keyboard[shiftButtonState.rawValue][3][collumn])
+                    }
+                }
+                .frame(maxHeight: 40)
+            })
+            
+            
+            
+            
+//            ForEach(0...keyboard[shiftButtonState.rawValue].count - 1, id: \.self) { row in
+//                HStack {
+//                    ForEach(0...keyboard[shiftButtonState.rawValue][row].count - 1, id: \.self) { collumn in
+//                        keyboardButton(text: keyboard[shiftButtonState.rawValue][row][collumn])
+//                    }
+//                }
+//            }
         }
         .padding(.vertical)
         .frame(maxWidth: .infinity)
+        .padding(.horizontal, 1)
         .background(
             Image(uiImage: uiImage)
         )
+        .onRotate { newOrientation in
+            orientation = newOrientation
+        }
+        .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification), perform: { output in
+            print(output)
+        })
     }
     
     
@@ -103,7 +150,7 @@ struct KeyboardView: View {
         case "UPPERCASE":
             Image("icon_uppercase")
                 .resizable()
-                .scaledToFit()
+//                .scaledToFit()
                 .frame(width: 32)
                 .onTapGesture {
                     if shiftButtonState != .normal {
@@ -115,7 +162,7 @@ struct KeyboardView: View {
         case "DELETE":
             Image("icon_delete")
                 .resizable()
-                .scaledToFit()
+//                .scaledToFit()
                 .frame(width: 32)
                 .onTapGesture {
                     deleteTextAction()
@@ -123,7 +170,7 @@ struct KeyboardView: View {
         case "123":
             Image("icon_number")
                 .resizable()
-                .scaledToFit()
+//                .scaledToFit()
                 .frame(width: 32)
                 .onTapGesture {
                     keyboard = Constants.numberKeys
@@ -131,7 +178,7 @@ struct KeyboardView: View {
         case ".":
             Image("icon_dot")
                 .resizable()
-                .scaledToFit()
+//                .scaledToFit()
                 .frame(width: 32)
                 .onTapGesture {
                     inputTextAction(".")
@@ -139,7 +186,7 @@ struct KeyboardView: View {
         case "SPACE":
             Image("icon_space")
                 .resizable()
-                .scaledToFit()
+//                .scaledToFit()
                 .frame(height: 45)
                 .onTapGesture {
                     inputTextAction(" ")
@@ -147,7 +194,7 @@ struct KeyboardView: View {
         case ",":
             Image("icno_comma")
                 .resizable()
-                .scaledToFit()
+//                .scaledToFit()
                 .frame(width: 32)
                 .onTapGesture {
                     inputTextAction(",")
@@ -155,7 +202,7 @@ struct KeyboardView: View {
         case "ENTER":
             Image("icon_enter")
                 .resizable()
-                .scaledToFit()
+//                .scaledToFit()
                 .frame(width: 32)
                 .onTapGesture {
                     inputTextAction("\n")
@@ -163,16 +210,15 @@ struct KeyboardView: View {
         case "ABC":
             Image("icno_comma")
                 .resizable()
-                .scaledToFit()
+//                .scaledToFit()
                 .frame(width: 32)
                 .onTapGesture {
 //                    keyboard = Constants.letterKeys
                 }
         default:
-            Image("icon_button")
+            Image((horizontalSizeClass == .compact && verticalSizeClass == .regular) ? "icon_button" : "icno_comma")
                 .resizable()
-                .scaledToFit()
-                .frame(width: 32)
+//                .scaledToFit()
                 .overlay {
                     Text(text)
                         .foregroundColor(.white)
@@ -196,5 +242,31 @@ struct Keyboard_Preview: PreviewProvider {
         } deleteTextAction: {
             
         }
+        .previewInterfaceOrientation(.landscapeLeft)
+        
+        KeyboardView(uiImage: UIImage(), nextKeyboardAction: Selector("")) { _ in
+            
+        } deleteTextAction: {
+            
+        }
+        .previewInterfaceOrientation(.portrait)
+    }
+}
+
+extension View {
+    func onRotate(perform action: @escaping (UIDeviceOrientation) -> Void) -> some View {
+        self.modifier(DeviceRotationViewModifier(action: action))
+    }
+}
+
+struct DeviceRotationViewModifier: ViewModifier {
+    let action: (UIDeviceOrientation) -> Void
+
+    func body(content: Content) -> some View {
+        content
+            .onAppear()
+            .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
+                action(UIDevice.current.orientation)
+            }
     }
 }

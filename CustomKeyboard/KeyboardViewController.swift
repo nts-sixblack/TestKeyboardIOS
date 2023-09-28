@@ -46,6 +46,7 @@ class KeyboardViewController: UIInputViewController {
             
             self.textDocumentProxy.deleteBackward()
         })
+            .environmentObject(OrientationInfo())
         
         // keyboardViewのSuperViewのSuperView(UIHostingController)の背景を透明にする
         let hostingController = UIHostingController(rootView: keyboardView)
@@ -78,6 +79,17 @@ class KeyboardViewController: UIInputViewController {
 //            textColor = UIColor.black
 //        }
 //        self.nextKeyboardButton.setTitleColor(textColor, for: [])
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        if(UIScreen.main.bounds.size.width < UIScreen.main.bounds.size.height){
+            //Keyboard is in Portrait
+            print("portrail")
+        }
+        else{
+            //Keyboard is in Landscape
+            print("lanscap")
+        }
     }
 
 }
